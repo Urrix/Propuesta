@@ -4,7 +4,6 @@ import { LoginComponent } from './login/login.component';
 import { CollageComponent } from './collage/collage.component'; // Asegúrate de crear este componente
 import { DiaryComponent } from './diary/diary.component'; // Asegúrate de crear este componente
 import { CongratsComponent } from './congrats/congrats.component';
-import { AuthGuard } from './guards/auth.guard';
 
 
 const routes: Routes = [
