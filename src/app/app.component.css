@@ -1,0 +1,46 @@
+/* Estilo para la nav-bar con colores personalizados */
+.navbar {
+  background-color: #003366; /* Azul marino */
+}
+
+.navbar-brand {
+  font-size: 1.8rem; /* Tamaño de fuente más grande */
+  font-weight: bold;
+  color: #ff5733; /* Rojo */
+}
+
+.nav-link {
+  color: #ff5733 !important; /* Rojo */
+  margin: 0 15px; /* Espaciado horizontal */
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #ffffff !important; /* Blanco al pasar el ratón */
+  text-decoration: underline; /* Subrayar el texto al pasar el ratón */
+}
+
+.navbar-toggler {
+  border: none; /* Quitar borde del botón de menú en móviles */
+}
+
+
+/* Estilos para el menú desplegable en móviles */
+@media (max-width: 767.98px) {
+  .navbar-collapse {
+    background-color: #003366; /* Fondo del menú desplegable */
+  }
+
+  .navbar-nav .nav-link {
+    color: #ff5733 !important; /* Color de los enlaces en el menú desplegable */
+  }
+}
+
+/* Estilos adicionales para mejorar la apariencia de la nav-bar */
+.navbar-nav {
+  flex-direction: row; /* Alinear los elementos del menú en una fila */
+}
+
+.nav-item {
+  padding: 0 10px; /* Espaciado interno de los elementos del menú */
+}

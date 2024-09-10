@@ -1,18 +1,43 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { CollageComponent } from './collage/collage.component';
+import { ProposalComponent } from './proposal/proposal.component';
+import { CongratsComponent } from './congrats/congrats.component';
+import { PhotosComponent } from './photos/photos.component';
+import { DiaryComponent } from './diary/diary.component';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+
+
+const routes: Routes = [
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'collage', component: CollageComponent },
+  { path: 'proposal', component: ProposalComponent },
+  { path: 'congrats', component: CongratsComponent }
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    CollageComponent,
+    ProposalComponent,
+    CongratsComponent,
+    PhotosComponent,
+    DiaryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    HttpClientModule,
+    RouterModule.forRoot(routes)
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+  ],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

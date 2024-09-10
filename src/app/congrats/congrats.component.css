@@ -1,0 +1,13 @@
+/* Estilos básicos para centrar el contenido y el carrusel */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+}

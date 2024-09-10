@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilo para la nav-bar con colores personalizados */
+.bg-custom {
+  background-color: #003366; /* Azul marino */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #ff5733 !important; /* Rojo */
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+.navbar-toggler-icon {
+  background-image: url('path/to/custom-toggler-icon.png'); /* Puedes usar una imagen personalizada si deseas */
+}

@@ -1,0 +1,20 @@
+/* Estilo para el botón "Sí" cuando crece después de que el usuario presiona "No" */
+#yesButton.grow {
+  transform: scale(1.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Colores adicionales */
+.btn-danger {
+  background-color: #ff4d4d;
+  border-color: #ff1a1a;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #218838;
+}
+
+.btn-danger:hover, .btn-success:hover {
+  opacity: 0.9;
+}

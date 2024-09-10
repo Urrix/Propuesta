@@ -1,0 +1,33 @@
+/* Estilos para las imágenes del carrusel */
+.carousel-inner img {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones del carrusel personalizados */
+.custom-control-prev, .custom-control-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-control-prev:hover, .custom-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-indicators button {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.carousel-indicators .active {
+  background-color: #007bff;
+}
