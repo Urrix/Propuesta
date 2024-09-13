@@ -13,7 +13,7 @@ export class LoginComponent {
   constructor(private router: Router) {}
 
   onSubmit() {
-    if (this.email === 'juribarrien@gmail.com' && this.password === 'tu_contraseña') {
+    if (this.email === 'andrea17.99@gmail.com' && this.password === '22-09-21') {
       alert('Inicio de sesión exitoso.');
       // Redirigir a la pantalla de collage
       this.router.navigate(['/collage']);

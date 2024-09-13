@@ -1,25 +1,82 @@
+/* Fondo degradado para el body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #004d00, #000); /* Degradado de verde oscuro a negro */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos del contenedor del formulario */
 .login-container {
-  width: 300px;
-  margin: 100px auto;
-  padding: 30px;
-  background-color: #333;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-box {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
   border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  width: 350px; /* Ajuste del ancho del formulario */
+  color: #fff;
 }
 
-.form-group {
-  margin-bottom: 15px;
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
-.form-control {
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #ccc; /* Color de las etiquetas */
+}
+
+.input-group input {
   width: 100%;
   padding: 10px;
-  margin: 5px 0 10px 0;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3); /* Fondo semitransparente para que los campos se vean */
+  color: #fff;
 }
 
-.btn-primary {
-  background-color: #28a745;
-  color: white;
-  padding: 10px;
+.input-group input::placeholder {
+  color: #eee; /* Color del texto placeholder */
+}
+
+.input-group input:focus {
+  outline: none;
+  border: 2px solid #00ff00; /* Borde verde brillante al enfocar */
+}
+
+.btn-submit {
   width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #00ff00;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #00cc00;
 }

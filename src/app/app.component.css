@@ -1,5 +1,5 @@
 /* Estilo para la nav-bar con colores personalizados */
-.navbar {
+.bg-custom {
   background-color: #003366; /* Azul marino */
 }
 
@@ -9,10 +9,23 @@
   color: #ff5733; /* Rojo */
 }
 
+.nav {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin: 0 15px; /* Espaciado horizontal entre los elementos de la nav-bar */
+}
+
 .nav-link {
   color: #ff5733 !important; /* Rojo */
-  margin: 0 15px; /* Espaciado horizontal */
   font-weight: 500;
+}
+
+.nav-link.active {
+  color: #ffffff !important; /* Blanco para el enlace activo */
+  background-color: #0056b3; /* Azul más claro para el fondo del enlace activo */
 }
 
 .nav-link:hover {
@@ -20,27 +33,7 @@
   text-decoration: underline; /* Subrayar el texto al pasar el ratón */
 }
 
-.navbar-toggler {
-  border: none; /* Quitar borde del botón de menú en móviles */
-}
-
-
-/* Estilos para el menú desplegable en móviles */
-@media (max-width: 767.98px) {
-  .navbar-collapse {
-    background-color: #003366; /* Fondo del menú desplegable */
-  }
-
-  .navbar-nav .nav-link {
-    color: #ff5733 !important; /* Color de los enlaces en el menú desplegable */
-  }
-}
-
-/* Estilos adicionales para mejorar la apariencia de la nav-bar */
-.navbar-nav {
-  flex-direction: row; /* Alinear los elementos del menú en una fila */
-}
-
-.nav-item {
-  padding: 0 10px; /* Espaciado interno de los elementos del menú */
+.nav-link.disabled {
+  color: #6c757d !important; /* Color gris para el enlace deshabilitado */
+  pointer-events: none; /* Desactivar clics en el enlace deshabilitado */
 }
