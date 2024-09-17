@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #004d00, #000); /* Degradado de verde oscuro a negro */
+  background: linear-gradient(135deg, #07ab07, #212020); /* Degradado de verde oscuro a negro */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -25,14 +25,14 @@ body {
   backdrop-filter: blur(10px);
   padding: 40px;
   width: 350px; /* Ajuste del ancho del formulario */
-  color: #fff;
+  color: #000000;
 }
 
 h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #fff;
+  color: #000000;
 }
 
 .input-group {
@@ -43,7 +43,7 @@ h2 {
   display: block;
   font-size: 0.9rem;
   margin-bottom: 5px;
-  color: #ccc; /* Color de las etiquetas */
+  color: #000000; /* Color de las etiquetas */
 }
 
 .input-group input {
@@ -53,23 +53,23 @@ h2 {
   border-radius: 5px;
   border: none;
   background-color: rgba(255, 255, 255, 0.3); /* Fondo semitransparente para que los campos se vean */
-  color: #fff;
+  color: #000;
 }
 
 .input-group input::placeholder {
-  color: #eee; /* Color del texto placeholder */
+  color: #ffffff; /* Color del texto placeholder */
 }
 
 .input-group input:focus {
   outline: none;
-  border: 2px solid #00ff00; /* Borde verde brillante al enfocar */
+  border: 2px solid #88d888; /* Borde verde brillante al enfocar */
 }
 
 .btn-submit {
   width: 100%;
   padding: 12px;
   font-size: 1rem;
-  background-color: #00ff00;
+  background-color: #99e499;
   border: none;
   border-radius: 5px;
   color: #000;
@@ -78,5 +78,5 @@ h2 {
 }
 
 .btn-submit:hover {
-  background-color: #00cc00;
+  background-color: #578557;
 }
