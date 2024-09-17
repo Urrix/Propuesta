@@ -1,7 +1,6 @@
 /* Estilo para la nav-bar con colores personalizados */
 .bg-custom {
-  background-color: #003366;
-  /* Azul marino */
+  background-color: #025eba;
 }
 
 .navbar-brand {
@@ -10,8 +9,7 @@
 }
 
 .nav-link {
-  color: #ff5733 !important;
-  /* Rojo */
+  color: #ee7a60 !important;
   margin: 0 15px;
   font-weight: 500;
 }
@@ -22,5 +20,4 @@
 }
 
 .navbar-toggler-icon {
-  /* background-image: url('path/to/custom-toggler-icon.png'); Puedes usar una imagen personalizada si deseas */
 }
