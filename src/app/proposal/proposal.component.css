@@ -1,20 +1,25 @@
-/* Estilo para el botón "Sí" cuando crece después de que el usuario presiona "No" */
-#yesButton.grow {
-  transform: scale(1.5);
-  transition: transform 0.3s ease-in-out;
+/* Mantén el botón en su posición, pero permite que crezca */
+button {
+  transition: transform 0.3s ease-in-out; /* Transición suave para agrandar */
+  position: relative; /* Mantiene la posición estática */
 }
 
-/* Colores adicionales */
-.btn-danger {
-  background-color: #ff4d4d;
-  border-color: #ff1a1a;
+/* Crece cuando se añade la clase 'grow' */
+button.grow {
+  transform: scale(1.2); /* Incrementa el tamaño en un 20% */
 }
 
-.btn-success {
-  background-color: #28a745;
-  border-color: #218838;
+/* Evita que el cursor encima mueva el botón */
+button:hover {
+  transform: scale(1.2); /* Agranda el botón al hacer hover */
 }
 
-.btn-danger:hover, .btn-success:hover {
-  opacity: 0.9;
+/* Estilos específicos para el botón "No" */
+button#noButton {
+  background-color: red;
+}
+
+/* Estilos específicos para el botón "Sí" */
+button#yesButton {
+  background-color: green;
 }

@@ -1,16 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .collage-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-  grid-gap: 10px; /* Espacio entre las imágenes */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 10px;
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
 }
 
-.collage-item {
-  position: relative;
-}
-
-.collage-item img {
+.collage-container img {
   width: 100%;
-  height: auto;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
+.collage-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
