@@ -11,6 +11,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { DiaryComponent } from './diary/diary.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { CrucigramaComponent } from './crucigrama/crucigrama.component';
+import { CommonModule } from '@angular/common';
 
 
 const routes: Routes = [
@@ -19,7 +20,6 @@ const routes: Routes = [
   { path: 'collage', component: CollageComponent },
   { path: 'proposal', component: ProposalComponent },
   { path: 'congrats', component: CongratsComponent },
-  
   { path: 'game', component: CrucigramaComponent },
 ];
 
@@ -38,6 +38,7 @@ const routes: Routes = [
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    CommonModule,
     RouterModule.forRoot(routes)
   ],
   providers: [
