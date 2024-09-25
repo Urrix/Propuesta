@@ -1,12 +1,12 @@
 /* Estilo para la nav-bar con colores personalizados */
 .bg-custom {
-  background-color: #003366; /* Azul marino */
+  background-color: #2279d0; /* Azul marino */
 }
 
 .navbar-brand {
   font-size: 1.8rem; /* Tamaño de fuente más grande */
   font-weight: bold;
-  color: #ff5733; /* Rojo */
+  color: #ec6445; /* Rojo */
 }
 
 .nav {
@@ -19,7 +19,7 @@
 }
 
 .nav-link {
-  color: #ff5733 !important; /* Rojo */
+  color: #ec6243 !important; /* Rojo */
   font-weight: 500;
 }
 

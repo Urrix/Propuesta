@@ -5,6 +5,7 @@ import { ProposalComponent } from './proposal/proposal.component';
 import { CollageComponent } from './collage/collage.component'; // Asegúrate de crear este componente
 import { DiaryComponent } from './diary/diary.component'; // Asegúrate de crear este componente
 import { CongratsComponent } from './congrats/congrats.component';
+import { CrucigramaComponent } from './crucigrama/crucigrama.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,9 @@ const routes: Routes = [
   { path: 'collage', component: CollageComponent },
   { path: 'diary', component: DiaryComponent },
   { path: 'congrats', component: CongratsComponent },
+  { path: 'crucigrama', component: CrucigramaComponent },
+  { path: '', redirectTo: '/game', pathMatch: 'full' },
+  { path: '', redirectTo: '/diary', pathMatch: 'full' },
   { path: '', redirectTo: '/login', pathMatch: 'full' }
 ];
 

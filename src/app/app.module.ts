@@ -10,6 +10,7 @@ import { CongratsComponent } from './congrats/congrats.component';
 import { PhotosComponent } from './photos/photos.component';
 import { DiaryComponent } from './diary/diary.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { CrucigramaComponent } from './crucigrama/crucigrama.component';
 
 
 const routes: Routes = [
@@ -17,7 +18,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'collage', component: CollageComponent },
   { path: 'proposal', component: ProposalComponent },
-  { path: 'congrats', component: CongratsComponent }
+  { path: 'congrats', component: CongratsComponent },
+  
+  { path: 'game', component: CrucigramaComponent },
 ];
 
 @NgModule({
@@ -28,7 +31,8 @@ const routes: Routes = [
     ProposalComponent,
     CongratsComponent,
     PhotosComponent,
-    DiaryComponent
+    DiaryComponent,
+    CrucigramaComponent
   ],
   imports: [
     BrowserModule,
