@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #07ab07, #212020); /* Degradado de verde oscuro a negro */
+  background: linear-gradient(130deg, #2d2828,#8cd18c ); /* Degradado de verde oscuro a negro */
   height: 100vh;
   display: flex;
   justify-content: center;

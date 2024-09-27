@@ -1,26 +1,77 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Masonry Grid */
+.masonry-grid {
+  column-count: 4; /* Número de columnas */
+  column-gap: 16px; /* Espacio entre columnas */
 }
 
-
-.collage-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 10px;
-  padding: 20px;
-  justify-items: center;
-  align-items: center;
+.grid-item {
+  position: relative;
+  margin-bottom: 16px;
+  break-inside: avoid; /* Evita que los elementos se quiebren en las columnas */
 }
 
-.collage-container img {
+.grid-item img {
   width: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
+  height: auto;
+  display: block;
+  border-radius: 12px; /* Esquinas redondeadas */
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
-.collage-container img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.grid-item:hover img {
+  transform: scale(1.05); /* Efecto zoom suave */
+  filter: brightness(0.7); /* Oscurece la imagen en hover */
+}
+
+/* Capa oscura al hacer hover */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 12px; /* Esquinas redondeadas en la capa */
+}
+
+.grid-item:hover .overlay {
+  opacity: 1; /* Muestra la capa oscura al hacer hover */
+}
+
+.text {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.grid-item:hover .text {
+  opacity: 1; /* Muestra el texto al hacer hover */
+}
+
+/* Responsivo */
+@media (max-width: 1200px) {
+  .masonry-grid {
+    column-count: 3; /* Tres columnas en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .masonry-grid {
+    column-count: 2; /* Dos columnas en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .masonry-grid {
+    column-count: 1; /* Una columna en pantallas muy pequeñas */
+  }
 }
