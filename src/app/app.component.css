@@ -1,6 +1,6 @@
 /* Estilo para la nav-bar con colores personalizados */
 .bg-custom {
-  background-color: #2279d0; /* Azul marino */
+  background-color: #000000; /* Azul marino */
 }
 
 .navbar-brand {
@@ -19,13 +19,13 @@
 }
 
 .nav-link {
-  color: #ec6243 !important; /* Rojo */
+  color: #fffefe !important; /* Rojo */
   font-weight: 500;
 }
 
 .nav-link.active {
   color: #ffffff !important; /* Blanco para el enlace activo */
-  background-color: #0056b3; /* Azul más claro para el fondo del enlace activo */
+  background-color: #020202; /* Azul más claro para el fondo del enlace activo */
 }
 
 .nav-link:hover {

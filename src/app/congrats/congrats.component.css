@@ -1,13 +1,37 @@
-/* Estilos básicos para centrar el contenido y el carrusel */
+/* Contenedor principal para centrar el contenido vertical y horizontalmente */
 .container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  text-align: center; /* Centrar el texto */
 }
 
-.carousel-inner img {
-  height: 400px;
+/* Estilo del grid tipo Masonry para las imágenes */
+.masonry-grid {
+  column-count: 3; /* Número de columnas */
+  column-gap: 16px; /* Espacio entre columnas */
+  width: 100%;
+  max-width: 900px; /* Limitar el ancho máximo del collage */
+  margin: 0 auto; /* Centrar el collage horizontalmente */
+}
+
+.grid-item {
+  margin-bottom: 16px;
+  break-inside: avoid; /* Evita que las imágenes se quiebren en las columnas */
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 12px; /* Bordes redondeados para las imágenes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .masonry-grid {
+    column-count: 2; /* Cambiar a dos columnas en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .masonry-grid {
+    column-count: 1; /* Cambiar a una columna en pantallas pequeñas */
+  }
 }

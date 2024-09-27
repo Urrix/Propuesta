@@ -1,25 +1,92 @@
-/* Mantén el botón en su posición, pero permite que crezca */
+/* Aplicar la nueva fuente */
+body {
+  font-family: 'Open Sans', sans-serif; /* Usa la fuente Open Sans de Google Fonts */
+  background-color: #f0f0f0; /* Fondo claro y suave */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor principal del login */
+.login-container {
+  width: 300px;
+  padding: 25px;
+  background-color: #ffffff; /* Fondo blanco para el formulario */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 12px; /* Bordes redondeados */
+  text-align: center;
+}
+
+/* Estilo del título */
+h2 {
+  font-size: 20px;
+  color: #333; /* Color de texto */
+  margin-bottom: 20px;
+}
+
+/* Estilo para los inputs de correo y contraseña */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Cambia el borde cuando el input está en foco */
+input:focus {
+  border-color: #4CAF50; /* Verde cuando está en foco */
+  outline: none;
+}
+
+/* Estilo de los botones */
 button {
-  transition: transform 0.3s ease-in-out; /* Transición suave para agrandar */
-  position: relative; /* Mantiene la posición estática */
+  width: 100px; /* Tamaño pequeño */
+  padding: 8px;
+  background-color: #4CAF50; /* Verde como color principal */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 12px; /* Tamaño pequeño de texto */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave */
+  margin: 5px;
 }
 
-/* Crece cuando se añade la clase 'grow' */
-button.grow {
-  transform: scale(1.2); /* Incrementa el tamaño en un 20% */
-}
-
-/* Evita que el cursor encima mueva el botón */
-button:hover {
-  transform: scale(1.2); /* Agranda el botón al hacer hover */
-}
-
-/* Estilos específicos para el botón "No" */
+/* Botón de error "No" */
 button#noButton {
-  background-color: red;
+  background-color: #ff4b5c; /* Rojo más llamativo */
 }
 
-/* Estilos específicos para el botón "Sí" */
-button#yesButton {
-  background-color: green;
+button#noButton:hover {
+  background-color: #e63946; /* Rojo más oscuro al hacer hover */
 }
+
+/* Botón de éxito "Sí" */
+button#yesButton {
+  background-color: #4CAF50; /* Verde */
+}
+
+button#yesButton:hover {
+  background-color: #45a049; /* Verde más oscuro al hacer hover */
+}
+
+/* Hover en los botones */
+button:hover {
+  background-color: #45a049; /* Color más oscuro al hacer hover */
+}
+
+/* Mensaje de error o éxito */
+.message {
+  margin-top: 15px;
+  font-size: 13px;
+  color: red; /* Color para los mensajes de error */
+}
+
+/* Aplicar la fuente Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet');

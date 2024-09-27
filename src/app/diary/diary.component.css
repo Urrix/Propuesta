@@ -1,0 +1,52 @@
+/* Contenedor principal que usa flexbox para organizar el collage y el widget */
+.collage-spotify-container {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+  gap: 20px; /* Espacio entre el collage y el reproductor de Spotify */
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo del grid tipo Masonry */
+.masonry-grid {
+  column-count: 3; /* Número de columnas */
+  column-gap: 16px; /* Espacio entre columnas */
+  width: 60%; /* Collage ocupa el 60% del espacio */
+}
+
+.grid-item {
+  margin-bottom: 16px;
+  break-inside: avoid; /* Evita que las imágenes se quiebren en las columnas */
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 12px; /* Bordes redondeados para las imágenes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
+  object-fit: cover;
+}
+
+/* Estilo para el widget de Spotify */
+.spotify-widget {
+  width: 35%; /* Spotify ocupa el 35% del espacio */
+  max-width: 400px; /* Limitar el tamaño máximo del reproductor */
+}
+
+@media (max-width: 768px) {
+  .collage-spotify-container {
+    flex-direction: column; /* Cambiar a disposición vertical en pantallas pequeñas */
+    align-items: center;
+  }
+
+  .masonry-grid {
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+  }
+
+  .spotify-widget {
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    margin-top: 20px;
+  }
+}

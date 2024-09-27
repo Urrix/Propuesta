@@ -21,6 +21,7 @@ const routes: Routes = [
   { path: 'proposal', component: ProposalComponent },
   { path: 'congrats', component: CongratsComponent },
   { path: 'game', component: CrucigramaComponent },
+  { path: 'diary', component: DiaryComponent },
 ];
 
 @NgModule({
